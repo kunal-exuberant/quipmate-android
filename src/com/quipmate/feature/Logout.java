@@ -15,7 +15,7 @@ public class Logout extends Activity{
 		sess.delValue("profileid");
 		sess.commit();
 		System.out.println(sess.getValue("sessionid")+" "+sess.getValue("profileid") );
-		Intent i = new Intent(this, Main.class);
+		Intent i = new Intent(this, Login.class);
 		startActivity(i);
 		finish();
 	}

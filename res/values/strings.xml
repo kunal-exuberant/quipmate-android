@@ -11,7 +11,10 @@
     <string name="quipmate_image">Quipmate Image</string>
     <string name="OK">OK</string>
     <string name="network_error">Connect your device to internet to continue.</string>
-	<string name="error">error</string>
-	<string name="code">code</string>
-	<string name="invalid_credential">Wrong email or password</string>
+    <string name="error">error</string>
+    <string name="code">code</string>
+    <string name="invalid_credential">Wrong email or password</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="action_settings">Settings</string>
+
 </resources>
