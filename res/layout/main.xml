@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Main" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_large" >
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="@dimen/width260"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_box"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="@dimen/padding_small"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/text_size_small" 
+            android:imeOptions="flagNoExtractUi"/>
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="@dimen/width260"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etemail"
+            android:layout_below="@+id/etemail"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/login_box"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/margin_small"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_small"
+            android:imeOptions="flagNoExtractUi" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/blogin"
+            android:layout_width="@dimen/width260"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etpassword"
+            android:layout_below="@+id/etpassword"
+            android:background="@drawable/login_button"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvtitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:contentDescription="@string/quipmate_image"
+            android:src="@drawable/ic_launcher" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/errormessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</ScrollView>

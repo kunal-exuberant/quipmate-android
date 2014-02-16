@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="103dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:padding="25dp"
+        android:layout_height="match_parent"
+        android:text="
+Q1: Ok great !! How to add my crush to crush list ?
+A: Ohh.. very simple. Just enter your crush&apos;s email in the box below.
+Q2: So what happens after I add my crush into my crush list ?
+A: Your crush will receive an anonymous email from Quipmate saying someone added her/him as crush at Quipmate. Your Identity will not be revealed in this email. This email will also contain a link which your crush will use to communicate with you using Quipmate&apos;s personal messaging system. You will find your crush&apos;s messages inside your inbox at Quipmate. You can use this thread to communicate with your crush. We recommend you not to reveal your identity in this process. Meanwhile if your crush gets some hint about you. She/he will attempt adding you as crush at Quipmate .
+Q3: What happens if she/he adds you as crush at Quipmate ?
+A: If your crush adds you as crush, that means she/he too has crush on you. Its a crush match !! We reveal your identity now. Your as well as your crush&apos;s friend will get an update about successful crush match. And Quipmate will wish you both happy life. But first you need to get started.
+Q4: What is crush match ?
+A: Crush match is a state of complete happiness. It happens when two people have mutual crush on each other. When both of them add each other as crush on Quipmate.
+Q6: What is crush list ?
+A: Crush list is the list of all people you have crush at. Everybody has a crush list. They add thier crush into this list.
+" />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</LinearLayout>
