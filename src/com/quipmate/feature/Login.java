@@ -70,7 +70,7 @@ public class Login extends Activity implements OnClickListener {
 	@Override
 	public void onBackPressed() {
 		super.onBackPressed();
-		System.out.println("Back button pressed ! Leaving app !");
+		//System.out.println("Back button pressed ! Leaving app !");
 	}
 
 	@Override
@@ -114,7 +114,9 @@ public class Login extends Activity implements OnClickListener {
 						email));
 				result = (new JSONTask(AppProperties.URL,
 						AppProperties.METHOD_GET, apiParams)).execute().get();
-				last = result.getJSONObject(0);
+				if(result != null){
+					last = result.getJSONObject(0);
+				}
 				if (last != null) {
 
 					if (last.has(AppProperties.ACK)
@@ -128,7 +130,7 @@ public class Login extends Activity implements OnClickListener {
 								last.getString(AppProperties.SESSION_NAME));
 						if (session.commit()) {
 
-							Intent intent = new Intent(this, Friends.class);
+							Intent intent = new Intent(this, WelcomeActivity.class);
 							startActivity(intent);
 							finish();
 

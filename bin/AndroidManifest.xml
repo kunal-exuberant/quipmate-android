@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -76,8 +76,12 @@
         </service>
 
         <activity
-            android:name="com.example.quipmate.WelcomeActivity"
+            android:name="com.quipmate.feature.WelcomeActivity"
             android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name="com.quipmate.feature.FriendsFragment"
+            android:label="@string/title_activity_friends_fragment" >
         </activity>
     </application>
 

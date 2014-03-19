@@ -9,7 +9,19 @@ import android.widget.Toast;
 import com.example.quipmate.R;
 import com.quipmate.constants.AppProperties;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class CommonMethods.
+ */
 public class CommonMethods {
+	
+	/**
+	 * Gets the login url.
+	 *
+	 * @param password the password
+	 * @param email the email
+	 * @return the login url
+	 */
 	public static String getLoginUrl(String password, String email) {
 		String URL = AppProperties.URL + "?action=login&password=" + password
 				+ "&email=" + email;
@@ -71,5 +83,7 @@ public class CommonMethods {
 		toast.show();
 
 	}
+
+	
 
 }

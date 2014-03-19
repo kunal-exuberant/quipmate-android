@@ -16,5 +16,7 @@
     <string name="invalid_credential">Wrong email or password</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
     <string name="action_settings">Settings</string>
-
+    <string name="title_activity_friends_fragment">FriendsFragmentActivity</string>
+    <string name="search_friend">Search a Friend</string>
+	<string name="pimage">Profile Image</string>
 </resources>

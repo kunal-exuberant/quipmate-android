@@ -21,6 +21,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.quipmate.constants.AppProperties;
+
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -56,7 +58,7 @@ public class JSONTask extends AsyncTask<String, String, JSONArray> {
 			if (method.equals("POST")) {
 
 				// request method is POST
-				DefaultHttpClient httpClient = new DefaultHttpClient();
+				DefaultHttpClient httpClient = AppProperties.appUserClient;
 				HttpPost httpPost = new HttpPost(URL);
 				httpPost.setEntity(new UrlEncodedFormEntity(postparams));
 
@@ -66,7 +68,7 @@ public class JSONTask extends AsyncTask<String, String, JSONArray> {
 
 			} else if (method == "GET") {
 				// request method is GET
-				DefaultHttpClient httpClient = new DefaultHttpClient();
+				DefaultHttpClient httpClient = AppProperties.appUserClient;
 				String paramString = URLEncodedUtils
 						.format(postparams, "utf-8");
 				URL += "?" + paramString;

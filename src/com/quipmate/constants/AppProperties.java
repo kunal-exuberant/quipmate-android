@@ -24,4 +24,10 @@ public class AppProperties {
 	public static final String WRONG_CREDENTIAL_CODE = "37";
 	public static final String ACK = "ack";
 	public static final String ACK_CODE = "1";
+	
+	
+	// json objects obtains from friend fetch
+	public static final String NAME = "name";
+	public static final String PROFILE_IMAGE = "pimage";
+	
 }

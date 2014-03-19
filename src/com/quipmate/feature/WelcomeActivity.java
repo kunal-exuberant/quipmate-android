@@ -1,13 +1,14 @@
-package com.example.quipmate;
+package com.quipmate.feature;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 
-public class WelcomeActivity extends Activity {
+import com.example.quipmate.R;
+
+public class WelcomeActivity extends SlidingBaseActivity {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_welcome);
 	}
